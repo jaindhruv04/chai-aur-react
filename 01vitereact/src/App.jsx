@@ -1,13 +1,16 @@
 import Chai from "./chai"
 
-
 function App() {
+
+  const username = "Chai aur react"
+
+
   return (
     <>
-      <h1>Chai aur React | Dhruv</h1>
-      <Chai />
+      <h1>{username} | Dhruv</h1>
+      <Chai /> 
     </>
   )
-}
+} 
 
 export default App
