@@ -1,20 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import heroImg from "./assets/hero.png";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  let [counter, setCounter] = useState(15);
+
+  // let counter = 15
+
+  const addValue = () => {
+    // counter = counter + 1
+    if (counter < 20) {
+      setCounter(counter + 1);
+      console.log("Updated Value:", counter);
+    } else {
+      console.log("Counter cannot exceed 20");
+    }
+  };
+
+  const removeValue = () => {
+    if (counter > 0) {
+      setCounter(counter - 1);
+    } else {
+      console.log("Counter cannot be negative");
+    }
+  };
 
   return (
     <>
+      <h1> Chai aur react</h1>
+      <h2>Counter Value: {counter}</h2>
 
-
-
-
+      <button onClick={addValue}>Add value {counter}</button>
+      <br />
+      <button onClick={removeValue}>Remove value {counter}</button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
