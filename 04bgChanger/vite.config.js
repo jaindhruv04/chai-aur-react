@@ -4,5 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/chai-aur-react/04bgchanger/",
+  base: "/chai-aur-react/04bgChanger/",
 });
