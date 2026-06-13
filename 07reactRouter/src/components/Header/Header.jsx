@@ -1,16 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
+// import logo from "../Header/logo.png";
 
 function Header() {
   return (
-    <header className="shadow sticky z-50 top-0 " >
-      <nav className=" border-gray-200 px-4 lg:px-6 py-2.5 bg-blue-100 rounded" >
+    <header className="shadow sticky z-50 top-0 ">
+      <nav className=" border-gray-200 px-4 lg:px-6 py-5 bg-blue-100 rounded">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="flex items-center">
-            <img
+          <Link to="/" className="flex items-center font-bold text-2xl">
+            {/* <img
               src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
               className="mr-3 h-12"
               alt="Logo"
-            />
+            /> */}
+            Dhruv Jain
           </Link>
           <div className="flex items-center lg:order-2">
             <Link
@@ -79,5 +81,4 @@ function Header() {
   );
 }
 
-
-export default  Header
+export default Header;
